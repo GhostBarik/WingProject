@@ -1,4 +1,4 @@
-WingProject
-===========
+# WingProject
 
-test 3D project using Scala and OpenGL
+This is a barebone example of an application written in
+[Scala.js](http://www.scala-js.org/).

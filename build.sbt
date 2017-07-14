@@ -1,13 +1,20 @@
-import AssemblyKeys._ // for "assenbly" plugin
+enablePlugins(ScalaJSPlugin)
 
-name := "Scala_test_again"
+// scala version
+scalaVersion := "2.12.2"
 
-version := "1.0"
+// project definition
+name := "WingProject"
+version := "0.0.1"
 
-scalaVersion := "2.11.4"
+// allow SBT to automatically recognize and use main class of our application
+scalaJSUseMainModuleInitializer := true
 
-// add LWJGL library depencency
-libraryDependencies += "org.lwjgl.lwjgl" % "lwjgl" % "2.9.1"
+// resolver for Three.js facade library
+resolvers += sbt.Resolver.bintrayRepo("denigma", "denigma-releases")
 
-// enable assembly plugin
-assemblySettings
+// libraries
+libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
+libraryDependencies += "org.denigma" %%% "threejs-facade" % "0.0.77-0.1.8"
+
+
