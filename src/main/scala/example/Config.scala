@@ -6,9 +6,5 @@ import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 object Config {
 
   @JSExport
-  var rotationSpeed = 0.01
-
-  // TODO: only for debugging purposes, remove after ...
-  @JSExport
-  var colladaLoadedScene: AnyRef = _
+  var rotationSpeed = 12.0
 }

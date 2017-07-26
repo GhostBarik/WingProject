@@ -1,4 +1,4 @@
-package example
+package example.typings
 
 import org.denigma.threejs.Loader
 
